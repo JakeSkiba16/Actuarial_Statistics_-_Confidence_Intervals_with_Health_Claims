@@ -39,8 +39,8 @@ def gen_lognormal_high(R, n, rng, mean=1.0, sigma=1.5):
 
 def gen_mixture(R, n, rng,
                 prop_small=0.95,
-                mean_small=1.0, sigma_small=0.75,
-                mean_large=5.0, sigma_large=2.0):
+                mean_small=0.8, sigma_small=0.75,
+                mean_large=4.8, sigma_large=2.0):
     """
     Mixture: 95% moderate lognormal + 5% catastrophic lognormal.
     True mean = 0.95 * mean_small + 0.05 * mean_large = 0.95 + 0.25 = 1.20
@@ -70,7 +70,7 @@ DISTRIBUTIONS = {
     'Gamma':            (gen_gamma,            1.0),
     'LognormalModerate':(gen_lognormal_moderate,1.0),
     'LognormalHigh':    (gen_lognormal_high,    1.0),
-    'Mixture':          (gen_mixture,           0.95*0.8 + 0.05*4.0),
+    'Mixture':          (gen_mixture,           0.95*0.8 + 0.05*4.8),
 }
 
 # ─────────────────────────────────────────
