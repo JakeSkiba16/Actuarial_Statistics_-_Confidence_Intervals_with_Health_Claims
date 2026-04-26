@@ -6,8 +6,8 @@ This project explores the mathematical and practical challenges of estimating he
 This repository traces the entire data lifecycle: ingesting and cleaning raw CMS claims data via Excel and SQL, simulating the failure of standard Confidence Intervals on skewed data, and applying actuarial modeling techniques (GLMs, Credibility Theory, and Two-Part Models) to estimate costs accurately.
 
 ## 🛠️ Tech Stack
-* **Data Processing:** Excel (Power Query, Advanced Formulas), SQL (SQLite, DBeaver)
-* **Statistical Modeling & Simulation:** Python/R (Monte Carlo simulations, GLMs, Bootstrapping)
+* **Data Processing:** Excel (Power Query, Advanced Formulas), SQL (PostgreSQL)
+* **Statistical Modeling & Simulation:** Python (Monte Carlo simulations, GLMs, Bootstrapping, Sensitivity Analysis, Credibilty)
 * **Version Control:** Git & GitHub
 
 ## 📂 Data Source
